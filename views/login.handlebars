@@ -1,27 +1,15 @@
 <div class="row">
   <div class="col-md-6">
-    <h2>Login</h2>
-
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">user name:</label><br>
-        <input class="form-input" type="text" id="email-login" />
-      </div>
-      <div class="form-group">
-        <label for="password-login">password:</label><br>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button><br>
-      </div>
-
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button><br>
-      </div>
-
+    <h2>LOGIN:</h2>
+    <form id="login-form" class="formlogin" >
+        <label for="username-login">User Name:</label><br>
+        <input class="form-input" type="text" id="username-login" /><br>
+        <label for="password-login">Password:</label><br>
+        <input class="form-input" type="password" id="password-login" /><br>
+        <button class="btn" type="submit">LOGIN</button>
+        <a href="/signup" class="btn"> SignUp Instead </a>
     </form>
   </div>
-  
 </div>
 
 <script src="./js/login.js"></script>

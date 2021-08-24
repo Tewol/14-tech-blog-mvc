@@ -1,5 +1,6 @@
-<div class="row mb-12 project">
-  <div class="form-group">
-    <button class="btn btn-primary" type="submit">+ New Post</button><br>
-  </div>
-</div>
+{{!-- <div class="row mb-12 project">--}}
+<article class="post">
+  {{#each posts as |post| }}
+      {{> post-info post}}
+  {{/each}}
+</article>

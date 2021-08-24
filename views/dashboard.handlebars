@@ -1,4 +1,4 @@
-<div class="row">
+{{!-- <div class="row">
   <div class="col-auto">
     <h2>Welcome, {{name}}!</h2>
   </div>
@@ -28,4 +28,17 @@
   </div>
 </div>
 
-<script src="./js/profile.js"></script>
+<script src="./js/profile.js"></script> --}}
+
+{{#if posts.length}}
+<section>
+  <h3>Your Dashboard</h3>
+    {{#each posts as |post|}}
+      {{> dashboard-postinfo post}}
+    {{/each}}
+</section>
+{{/if}}
+
+<button type="submit" class="btn"><a class="link" href="/dashboard/new"> + New Post </a></button>
+
+<script src="/javascript/add-post.js"></script>
