@@ -15,7 +15,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "jest",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "watch": "nodemon server.js",
     "seed": "node seeds/index.js"
@@ -25,10 +25,6 @@
     "url": "git+https://github.com/Tewol/14-tech-blog-mvc.git"
   },
 
-  "production": {
-    "use_env_variable": "JAWSDB_URL",
-    "dialect": "mysql"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
