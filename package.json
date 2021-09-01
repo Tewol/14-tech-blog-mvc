@@ -25,6 +25,10 @@
     "url": "git+https://github.com/Tewol/14-tech-blog-mvc.git"
   },
 
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
