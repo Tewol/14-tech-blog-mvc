@@ -1,7 +1,6 @@
 const router = require("express").Router();
 const { User, Post, Comment } = require("../../models");
 
-
 router.get("/", (req, res) => {
   User.findAll({
     attributes: { exclude: ["[password"] },
@@ -52,8 +51,7 @@ router.get("/:id", (req, res) => {
     });
 });
 
-router.post("/", async(req, res) => {
-    
+router.post("/", async (req, res) => {
   User.create({
     username: req.body.username,
     password: req.body.password,
@@ -96,7 +94,7 @@ router.post("/login", (req, res) => {
         req.session.username = dbUserData.username;
         req.session.loggedIn = true;
 
-        res.json({ user: dbUserData, message: "You are now logged in!" });
+        res.json({ user: dbUserData, message: "Login Sucessful!" });
       });
     })
     .catch((err) => {

@@ -14,19 +14,11 @@ main {
   width: 94%;
 }
 
-/* .wrapper {
-  width: 100%;
-  min-height: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-} */
-
 p {
   font-size: 1.2rem;
 }
 
-.btn {
+.btn button {
   margin: 0.5%;
   font-size: 1.25rem;
   text-align: center;

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +9,21 @@
 
 <body>
   <div class="wrapper">
-      <header class="hero">
-          <div>
-            <nav class"nav">
-              <a class="link" href="/">Home</a>
-              <a class="link" href="/">Dashboard</a>
-              {{#if loggedIn}}
-              <a class="link" href="/" id="logout">Logout</a>
-              {{else}}
-              <a class="link" href="/login">Login</a>
-              {{/if}}
-              </nav>          
-          </div>
+    <header class="hero">
+      <div>
+        <nav class"nav">
+          <a class="link" href="/">Home</a>
+          <a class="link" href="/">Dashboard</a>
+          {{#if loggedIn}}
+          <a class="link" href="/" id="logout">Logout</a>
+          {{else}}
+          <a class="link" href="/login">Login</a>
+          {{/if}}
+          </nav>          
+      </div>
 
-          <h1 class="app-title">The Tech Blog</h1>
-      </header>
-
+      <h1 class="app-title">The Tech Blog</h1>
+    </header>
     <main>
       {{{ body }}}
     </main>
@@ -34,57 +32,6 @@
     {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
     {{/if}}
-
 </body>
 
 </html>
-
-
-{{!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech Blog!</title>
-  <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-
-<body>
-  <div class="flex-column justify-space-around">
-    <header class="header">
-      <nav class="display-flex justify-space-between align-center p-2">
-        <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/"> Home</a>
-        <a href="/dashboard"> Dashboard </a>
-        <a href="/logout"> Logout </a>
-    
-        {{else}}
-        <a href="/"> Home</a>
-        <a href="/dashboard"> Dashboard</a>
-        <a href="/login">Login</a>
-
-        {{/if}}
-      </nav>
-
-      <h1>
-        <button> The Tech Blog </button>
-      </h1>
-    </header>
-
-    <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
-      {{{ body }}}
-    </main>
-    <footer>
-    </footer>
-  </div>
-
-  <!-- Render script for logged in users only -->
-  {{#if logged_in}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
-</body>
-
-</html> --}}

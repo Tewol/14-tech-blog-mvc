@@ -17,6 +17,11 @@ const postData = [
     content: "THE TESLA RECRUITMENT presentation ended Thursday night when a person in a tight white suit, their head encased in black, robot-walked onto the dark stage. Techno music blared, and the person began to Charleston. The person did the running man. The person waggled their shoulders and extended their arms into jazz hands. “All right. Thank you,” CEO Elon Musk said, an eternal-seeming 40 seconds into the freestyle, cutting off the dance.",
     user_id: 1,
   },
+  {
+    title: "Tesla Promised a Robot. Was It Just a Recruiting Pitch?",
+    content: "THE TESLA RECRUITMENT presentation ended Thursday night when a person in a tight white suit, their head encased in black, robot-walked onto the dark stage. Techno music blared, and the person began to Charleston. The person did the running man. The person waggled their shoulders and extended their arms into jazz hands. “All right. Thank you,” CEO Elon Musk said, an eternal-seeming 40 seconds into the freestyle, cutting off the dance.",
+    user_id: 3,
+  },
 ];
 
 const seedPosts = () => Post.bulkCreate(postData);
