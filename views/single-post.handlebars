@@ -5,7 +5,7 @@
   <h3 class="card-header"></h3>
   <form class="comment" id="comment-form">
     <label class="label">Comment</label>
-    <input id="comment" name="body" class="input" />
+    <input id="comment-input" name="comment" class="input" />
     <button type="submit" class="button">Submit</button>
   </form>
 </div>
@@ -13,5 +13,5 @@
 {{/if}}
   {{> comments post.comments}}
 {{#if loggedIn}}
-  <script src="/javascript/comment.js"></script>
+  <script src="/js/comment.js"></script>
 {{/if}}
