@@ -1,10 +1,22 @@
 * {
   box-sizing: border-box;
-  background-color: rgb(211, 206, 206)
+  background-color: #ccb9b9;
+}
+
+.blog-header {
+  padding: 5%;
+  background-color: #3a1111;
+}
+.app-title {
+  font-size: 2.5rem;
+  background-color: #9b7b14;
+  color: #160a09;
+  padding: 5px;
+  display: inline-block;
 }
 
 body {
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: #160a09;
   font-size: 24px;
 }
@@ -18,7 +30,7 @@ p {
   font-size: 1.2rem;
 }
 
-.btn button {
+.button {
   margin: 0.5%;
   font-size: 1.25rem;
   text-align: center;
@@ -26,33 +38,20 @@ p {
   padding: 10px;
   width: 40%;
   display: block;
-  color: rgb(241, 235, 235);
-  background-color:#160a09;
+  color: white;
+  background-color: #3a1111;;
  
 }
 
-.hero {
-  padding: 5%;
-  background-color: #160a09;
-}
-
-.app-title {
-  font-size: 2.5rem;
-  background-color: rgb(143, 141, 45);
-  color: #160a09;
-  padding: 5px;
-  display: inline-block;
+.comment-input{
+  width: 40%;
+  padding-bottom: 25px;
 }
 
 .list-item {
   margin-bottom: 10px;
   padding: 1.5%;
-  background-color:  rgb(175, 62, 62);
   color: #160a09;
-}
-
-.list-item:hover {
-  background-color: #160a09;
 }
 
 h4 {
